@@ -73,6 +73,7 @@
 	background-color: rgb(96, 96, 97);
 	margin-bottom: 3px;
 	transition: linear 0.3s;
+	opacity: 1;
 }
 .header__bottom {
 	display: flex;
@@ -101,6 +102,8 @@ li {
 }
 .middle {
 	display: none;
+	position: absolute;
+	opacity: 0;
 }
 .bottom {
 	transform: rotate(45deg) translateX(-3px) translateY(0px);
