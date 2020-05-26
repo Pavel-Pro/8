@@ -95,14 +95,14 @@ li {
 	color: rgb(178, 242, 238);
 }
 .top {
-	transform: rotate(40deg) translateX(4px);
+	transform: rotate(45deg) translateX(4px);
 	transition: 0.7s;
 }
 .middle {
 	display: none;
 }
 .bottom {
-	transform: rotate(-40deg) translateX(4px);
+	transform: rotate(-45deg) translateX(4px);
 	transition: 0.7s;
 }
 .h1 {
