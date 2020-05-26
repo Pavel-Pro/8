@@ -1281,9 +1281,13 @@ textarea::placeholder {
 		width: 55%;
 	}
 	.burger {
-		height: 2px;
-		width: 20px;
+		height: 3px;
+		width: 30px;
 		margin-bottom: 3px;
+	}
+	.burger__link {
+	    position: absolute;
+	    right: 5%;
 	}
 	.h1 {
 		margin-top: 80px;
