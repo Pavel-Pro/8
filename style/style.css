@@ -816,6 +816,12 @@ textarea::placeholder {
 	.wrapper {
 		margin: auto 90px;
 	}
+	li {	
+		padding-bottom: 8px;
+	}
+	.menu__link {
+		font-size: 20px;
+	}
 	.button {
 		margin-top: 80px;
 		font-size: 14px;
@@ -977,6 +983,12 @@ textarea::placeholder {
 	.wrapper {
 		margin: auto 50px;
 	}
+	li {	
+		padding-bottom: 5px;
+	}
+	.menu__link {
+		font-size: 20px;
+	}
 	.button {
 		margin-top: 50px;
 		font-size: 14px;
@@ -1126,10 +1138,23 @@ textarea::placeholder {
 	.logo {
 		width: 70%;
 	}
+	.burger__link {
+	    position: absolute;
+	    right: 3%;
+	}
 	.burger {
-		height: 2px;
-		width: 20px;
+		height: 3px;
+		width: 30px;
 		margin-bottom: 3px;
+	}
+	li {	
+		padding-bottom: 5px;
+	}
+	.menu{
+		height: 55%;
+	}
+	.menu__link {
+		font-size: 20px;
 	}
 	.h1 {
 		margin-top: 80px;
