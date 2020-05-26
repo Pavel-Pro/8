@@ -72,6 +72,7 @@
 	width: 25px;
 	background-color: rgb(96, 96, 97);
 	margin-bottom: 3px;
+	transition: linear 0.3s;
 }
 .header__bottom {
 	display: flex;
@@ -96,14 +97,14 @@ li {
 }
 .top {
 	transform: rotate(45deg) translateX(4px);
-	transition: 0.7s;
+	transition: 0.5s;
 }
 .middle {
 	display: none;
 }
 .bottom {
 	transform: rotate(-45deg) translateX(4px);
-	transition: 0.7s;
+	transition: 0.5s;
 }
 .h1 {
 	margin-top: 180px;
