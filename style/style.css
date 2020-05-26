@@ -44,6 +44,7 @@
 .header {
 	background-color: rgb(239, 240, 242);
 	height: 700px;
+	position: relative;
 }
 .wrapper {
 	margin: auto 150px;
@@ -54,8 +55,14 @@
 	padding-top: 50px;
 }
 .menu {
-	padding-top: 15px;
 	display: none;
+	position: absolute;
+	right: 0;
+	list-style: none;
+	margin-top: 20px;
+	width: 220px;
+	text-align: right;
+	z-index: 1;
 }
 .burger__link {
 	cursor: pointer;
@@ -71,6 +78,32 @@
 	align-items: center;
 	flex-flow: column;
 	position: relative;
+}
+li {	
+	padding-bottom: 15px;
+}
+.menu__link {
+	text-decoration: none;
+	text-transform: uppercase;
+	color: rgb(0, 0, 0);
+	font-family: Montserrat;
+	font-weight: 900;
+	font-size: 25px;
+	transition: 0.5s;
+}
+.menu__link:hover {
+	color: rgb(178, 242, 238);
+}
+.top {
+	transform: rotate(40deg) translateX(4px);
+	transition: 0.7s;
+}
+.middle {
+	display: none;
+}
+.bottom {
+	transform: rotate(-40deg) translateX(4px);
+	transition: 0.7s;
 }
 .h1 {
 	margin-top: 180px;
