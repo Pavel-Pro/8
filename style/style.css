@@ -276,19 +276,23 @@ li {
 	background-color: rgb(112, 245,235);
 	position: absolute;
 	height: 100%;
+	display: flex;
+	flex-flow: column;
+	justify-content: space-around;
 }
 .services__more-title {
 	font-family: Merriweather;
 	font-size: 20px;
 	color: rgb(0, 0, 0);
-	padding: 50px 0 45px 45px;
-	text-transform: uppercase; 
+	text-transform: uppercase;
+	padding-left: 45px; 
 }
 .services__more-text {
 	font-family: Raleway;
 	font-size: 16px;
 	color: rgba(0, 0, 0, 0.8);
-	padding: 0 100px 80px 45px;
+	width: 90%;
+	padding-left: 45px; 
 }
 .close__link {
 	max-width: 25px;
@@ -299,6 +303,7 @@ li {
 	transform: rotate(45deg);
 	position: relative;
 	cursor: pointer;
+	/*margin: auto 0;*/
 }
 .close__link:after {
 	content: ' ';
