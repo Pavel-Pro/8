@@ -8,4 +8,11 @@ $(document).ready(function() {
 	$('.wrap__btn').on('click', function() {	
 		$(this).parent().toggleClass('unvisible');
 	});
+	$('.person__slider').slick({
+		dots: true,
+ 		infinite: true,
+        speed: 300,
+        slidesToShow: 1,
+        adaptiveHeight: true
+	});
 });

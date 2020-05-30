@@ -498,14 +498,18 @@ li {
 /* Начало секции информации о сотруднике*/
 .person {
 	background-color: rgb(249, 251, 251);
-	height: 850px;
+	height: 100%;
 }
 .person__wrap {
 	margin-top: 140px;
+	margin-bottom: 50px;
+	margin-right: 25px;
 	display: flex;
+	flex-flow: row wrap;
 	justify-content: space-between;
-	width: 100%;
+	width: 100px;
 	align-items: center;
+	position: relative;
 }
 .person__info-photo {
 	width: 40%;
@@ -515,12 +519,13 @@ li {
 	margin-right: 50px;
 }
 .person__info {
-	flex: 0 1 55%;
+	flex: 0 1 58%;
 	background-color: rgb(234, 235, 237);
 	display: flex;
 	flex-flow: column;
 	align-items: center;
 	height: 340px;
+	width: 60%;
 } 
 .parson__info-title {
 	font-size: 20px;
@@ -543,6 +548,46 @@ li {
 	font-family: Raleway;
 	color: rgba(120, 120, 120, 0.8);
 	margin-bottom: 40px;
+}
+.person__info-stars {
+	display: flex;
+}
+.slick-arrow {
+	background-color: rgb(255, 255, 255);
+	width: 37px;
+	height: 37px;
+	position: absolute;
+	bottom: 10px;
+	right: 25px;
+	z-index: 5;
+}
+.slick-arrow:focus {
+	background-color: rgb(255, 255, 255);
+}
+.slick-arrow:after {
+	content: "";
+	width: 14px;
+	height: 14px;
+	position: absolute;
+	transform: rotate(45deg);
+}
+.slick-prev{
+	padding-right: 12px;
+	margin-right: 50px;
+}
+.slick-next {
+	padding-right: 24px;
+}
+.slick-prev:after {
+	border-bottom: 4px solid rgb(178, 178, 178);
+	border-left: 4px solid rgb(178, 178, 178);
+}
+.slick-next:after {
+	border-top: 4px solid rgb(178, 178, 178);
+	border-right: 4px solid rgb(178, 178, 178);
+}
+.slick-arrow:hover {
+	background-color: rgb(113, 246, 235);
 }
 /*Конец секции информации о сотруднике*/
 /*Начало секции лого*/
