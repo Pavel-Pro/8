@@ -254,6 +254,12 @@ li {
 	flex-flow: row wrap;
 	align-items: center;
 }
+.unvisible .show {
+	display: none;
+}
+.unvisible .hide {
+	display: block;
+}
 .service__text-wrap {
 	display: flex;
 	flex-flow: row wrap;
@@ -271,50 +277,6 @@ li {
 	height: 400px;
 	position: relative;
 }
-/*Блок дополнительной информацией окна services*/
-.services__more {
-	background-color: rgb(112, 245,235);
-	position: absolute;
-	height: 100%;
-	display: flex;
-	flex-flow: column;
-	justify-content: space-around;
-}
-.services__more-title {
-	font-family: Merriweather;
-	font-size: 20px;
-	color: rgb(0, 0, 0);
-	text-transform: uppercase;
-	padding-left: 45px; 
-}
-.services__more-text {
-	font-family: Raleway;
-	font-size: 16px;
-	color: rgba(0, 0, 0, 0.8);
-	width: 90%;
-	padding-left: 45px; 
-}
-.close__link {
-	max-width: 25px;
-	height: 4px;
-	background-color: rgba(0, 0, 0, 0.7);
-	margin-left: 45px;
-	display: block;
-	transform: rotate(45deg);
-	position: relative;
-	cursor: pointer;
-	/*margin: auto 0;*/
-}
-.close__link:after {
-	content: ' ';
-	position: absolute;
-	width: 25px;
-	height: 4px;
-	display: block;
-	background-color: rgba(0, 0, 0, 0.7);
-	transform: rotate(-90deg);
-}
-/*конец блока дополнительной информацией окна services*/
 .services__item:nth-child(2) {
 	background-image: url(../images/service_img2.png);
 	background-size: cover;
@@ -368,6 +330,10 @@ li {
 	height: 400px;
 	position: relative;
 }
+.services__item.unvisible {
+	background-color: rgba(112, 246, 235, 1);
+	background-image: none;
+}
 .services__title {
 	font-family: Merriweather;
 	vertical-align: center;
@@ -405,6 +371,36 @@ li {
 	font-size: 24px;
 	vertical-align: bottom;
 	color: rgb(255, 255, 255);
+}
+.unvisible .services__title {
+	font-size: 20px;
+	margin-left: 60px;
+	margin-top: 20px;
+	margin-bottom: 15px;
+	color: rgb(0, 0, 0);
+	text-transform: uppercase;
+}
+.close__link {
+	width: 25px;
+	height: 4px;
+	background-color: rgba(0, 0, 0, 0.7);
+	margin-left: 45px;
+	display: block;
+	transform: rotate(45deg);
+	position: relative;
+	cursor: pointer;
+}
+.close__link:after {
+	content: ' ';
+	position: absolute;
+	width: 25px;
+	height: 4px;
+	display: block;
+	background-color: rgba(0, 0, 0, 0.7);
+	transform: rotate(-90deg);
+}
+.hide {
+	display: none;
 }
 /*Конец секции сервис*/
 /*Начало секции команда*/

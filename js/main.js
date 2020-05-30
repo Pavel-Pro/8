@@ -5,4 +5,10 @@ $(document).ready(function() {
 		$('.burger:nth-child(2)').toggleClass('middle')
 		$('.burger:last-child').toggleClass('bottom');
 	});
+	$('.wrap__btn').on('click', function() {	
+		$(this).parent().toggleClass('unvisible');
+	});
+	$(window).on('scroll', function() {
+		console.log(5);
+	});
 });
