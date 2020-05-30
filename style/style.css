@@ -274,7 +274,7 @@ li {
 	flex: 3 1 56%;
 	margin-right: 15px;
 	padding-right: 30px;
-	height: 400px;
+	max-height: 400px;
 	position: relative;
 }
 .services__item:nth-child(2) {
@@ -375,16 +375,22 @@ li {
 .unvisible .services__title {
 	font-size: 20px;
 	margin-left: 60px;
-	margin-top: 20px;
-	margin-bottom: 15px;
+	margin-top: 40px;
+	margin-bottom: 20px;
 	color: rgb(0, 0, 0);
 	text-transform: uppercase;
+}
+.unvisible .services__text {
+	margin-left: 60px;
+	font-size: 16px;
+	font-family: Raleway;
+	color: rgb(0, 0, 0);
 }
 .close__link {
 	width: 25px;
 	height: 4px;
 	background-color: rgba(0, 0, 0, 0.7);
-	margin-left: 45px;
+	margin-left: 55px;
 	display: block;
 	transform: rotate(45deg);
 	position: relative;
@@ -740,12 +746,15 @@ textarea::placeholder {
 	}
 	.services__item:first-child {
 		margin-right: 5px;
+		flex: 3 1 56%;
 	}
 	.services__item:nth-child(3) {
 		margin-right: 5px;
+		flex: 3 1 56%;
 	}
 	.services__item:nth-child(5) {
 		margin-right: 5px;
+		flex: 3 1 56%;
 	}
 	.services__title {
 		margin-left: 30px;
@@ -915,32 +924,32 @@ textarea::placeholder {
 		margin-top: 80px;
 	}
 	.services__item:first-child {
-		flex: 3 1 56%;
+		flex: 1 1 49%;
 		margin-right: 5px;
 		padding-right: 7px;
 		height: 280px;
 	}
 	.services__item:nth-child(2) {
-		flex: 2 1 37%;
+		flex: 1 1 49%;
 		height: 280px;
 	}
 	.services__item:nth-child(3) {
-		flex: 2 1 56%;
+		flex: 1 1 50%;
 		margin-right: 5px;
 		height: 230px;
 		display: flex;
 	}
 	.services__item:nth-child(4) {
-		flex: 1 1 37%;
+		flex: 1 1 49%;
 		height: 230px;
 	}
 	.services__item:nth-child(5) {
-		flex: 2 1 37%;
+		flex: 1 1 50%;
 		margin-right: 5px;
 		height: 280px;
 	}
 	.services__item:last-child {
-		flex: 3 1 56%;
+		flex: 1 1 49%;
 		height: 280px;
 	}
 	.services__title {
@@ -962,8 +971,44 @@ textarea::placeholder {
 		margin-left: 10px;
 		font-size: 20px;
 	}
+	.unvisible .services__title {
+		font-size: 15px;
+		margin-left: 14px;
+		margin-top: 14px;
+		margin-bottom: 10px;
+		color: rgb(0, 0, 0);
+		text-transform: uppercase;
+	}
+	.unvisible .services__text {
+		margin-left: 14px;
+		font-size: 12px;
+		font-family: Raleway;
+		color: rgb(0, 0, 0);
+	}
+	.close__link {
+		width: 20px;
+		height: 3px;
+		background-color: rgba(0, 0, 0, 0.7);
+		margin-left: 12px;
+		display: block;
+		transform: rotate(45deg);
+		position: relative;
+		cursor: pointer;
+	}
+	.close__link:after {
+		content: ' ';
+		position: absolute;
+		width: 20px;
+		height: 3px;
+		display: block;
+		background-color: rgba(0, 0, 0, 0.7);
+		transform: rotate(-90deg);
+	}
 	.team__wrap {
 		margin-top: 80px;
+	}
+	.hide {
+		display: none;
 	}
 	.person__wrap {
 		margin-top: 80px;

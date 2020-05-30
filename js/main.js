@@ -8,7 +8,4 @@ $(document).ready(function() {
 	$('.wrap__btn').on('click', function() {	
 		$(this).parent().toggleClass('unvisible');
 	});
-	$(window).on('scroll', function() {
-		console.log(5);
-	});
 });
