@@ -13,6 +13,7 @@ $(document).ready(function() {
  		infinite: true,
         speed: 300,
         slidesToShow: 1,
-        adaptiveHeight: true
+        adaptiveHeight: true,
+        draggable: false
 	});
 });

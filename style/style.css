@@ -499,15 +499,17 @@ li {
 .person {
 	background-color: rgb(249, 251, 251);
 	height: 100%;
+	padding-bottom: 30px;
 }
 .person__wrap {
 	margin-top: 140px;
 	margin-bottom: 50px;
-	margin-right: 25px;
+	margin-right: 20px;
+	margin-left: 20px;
 	display: flex;
-	flex-flow: row wrap;
+	flex-flow: row nowrap;
 	justify-content: space-between;
-	width: 100px;
+	width: 100%;
 	align-items: center;
 	position: relative;
 }
@@ -541,6 +543,12 @@ li {
 	padding-left: 10px;
 	font-style: italic;
 }
+.person__info {
+	width: 100%;
+}
+.person__info-stars {
+	padding: 0 0 20px 0;
+}
 .person__info-text {
 	width: 75%;
 	font-size: 14px;
@@ -557,7 +565,7 @@ li {
 	width: 37px;
 	height: 37px;
 	position: absolute;
-	bottom: 10px;
+	top: 95%;
 	right: 25px;
 	z-index: 5;
 }
@@ -1072,6 +1080,15 @@ textarea::placeholder {
 	}
 	.person__info-text {
 		width: 85%;
+	}
+	.slick-arrow {
+		display: none;
+	}
+	.slick-dots {
+	    display: flex;
+	    justify-content: center;
+	    width: 100%;
+	    text-align: center;
 	}
 	.contact {
 		background-image: url(../images/contact__bg.png);
